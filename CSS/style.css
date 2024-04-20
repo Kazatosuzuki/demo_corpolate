@@ -74,19 +74,17 @@ img{
 /*iconのみをセンターにできないので一旦後で考えることにする*/
 
 .job_recruitment{
-    margin: 80px 16px 32px 16px;
+    /*背景画像の設定*/
+    background: url(../images/bg-hero.jpg) no-repeat right top / 70vw auto;
 }
 
 .challenge{
     font-size: 24px;
     border: 2px solid #fff;
     background: #fff;
+    opacity: .6;/*半透明にする*/
     display: inline-block;
-    padding: 10px;
+    margin-top: 125px;
+    margin-bottom: 24px;
+    padding: 14px;
 }
-
-/*背景画像を擬似要素として実装してみる。
-.challenge::before{
-
-}
-ここから作業開始*/
