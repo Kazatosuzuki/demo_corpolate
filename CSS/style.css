@@ -88,3 +88,77 @@ img{
     margin-bottom: 24px;
     padding: 14px;
 }
+
+.job_recruitment p{
+    margin-top: 6px;
+    line-height: 1.6;
+    margin-bottom: 24px;
+    font-size: 18px;
+}
+
+.job_recruitment a{
+    font-size: 20px;
+    color: #fff;
+    border: 1px solid #0000cd;
+    background: #0000cd;
+    display: inline-block;
+    padding: 16px 64px;
+    margin: 0 0 24px 60px;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.job_recruitment a:hover{
+    background: #4169e1;
+    transition: 0.5s;
+}
+
+.job_info{
+    background: #ffffe0;
+}
+
+.job_info_title{
+    font-size: 24px;
+    margin-top: 14px;
+    padding: 64px 0 14px 16px;
+}
+
+/*下線を擬似要素にて作成*/
+.job_info_title::after{
+    content: '';
+    border-bottom: 4px solid #deb887;
+    display: block;
+    width: 180px;
+    height: 20px;
+}
+
+.job_info p{
+    margin: 14px 10px;
+    line-height: 1.5;
+    padding-bottom: 12px;
+}
+
+.work_style{
+    background: #ffffe0;
+}
+
+.work_style_title{
+    font-size: 24px;
+    margin-top: 14px;
+    padding: 64px 0 14px 16px;
+}
+
+/*下線を擬似要素にて作成*/
+.work_style_title::after{
+    content: '';
+    border-bottom: 4px solid #deb887;
+    display: block;
+    width: 180px;
+    height: 20px;
+}
+
+.work_style p{
+    margin: 14px 10px;
+    line-height: 1.5;
+    padding-bottom: 12px;
+}
