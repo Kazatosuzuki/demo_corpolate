@@ -80,6 +80,7 @@ img{
 
 .challenge{
     font-size: 24px;
+    font-weight: bold;
     border: 2px solid #fff;
     background: #fff;
     opacity: .6;/*半透明にする*/
@@ -94,6 +95,9 @@ img{
     line-height: 1.6;
     margin-bottom: 24px;
     font-size: 18px;
+    margin-right: 7px;
+    margin-left: 7px;
+    padding: 0 3px;
 }
 
 .job_recruitment a{
@@ -101,11 +105,12 @@ img{
     color: #fff;
     border: 1px solid #0000cd;
     background: #0000cd;
-    display: inline-block;
+    display: block;
     padding: 16px 64px;
-    margin: 0 0 24px 60px;
+    margin: 0 17px 24px 11px;
     box-sizing: border-box;
-    align-items: center;
+    text-align: center;
+    text-decoration: none;
 }
 
 .job_recruitment a:hover{
@@ -115,12 +120,13 @@ img{
 
 .job_info{
     background: #ffffe0;
+    margin-top: 20px;
 }
 
 .job_info_title{
-    font-size: 24px;
+    font-size: 20px;
     margin-top: 14px;
-    padding: 64px 0 14px 16px;
+    padding: 14px 0 14px 16px;
 }
 
 /*下線を擬似要素にて作成*/
@@ -135,17 +141,13 @@ img{
 .job_info p{
     margin: 14px 10px;
     line-height: 1.5;
-    padding-bottom: 12px;
-}
-
-.work_style{
-    background: #ffffe0;
+    padding: 0 3px;
 }
 
 .work_style_title{
-    font-size: 24px;
+    font-size: 20px;
     margin-top: 14px;
-    padding: 64px 0 14px 16px;
+    padding: 14px 0 14px 16px;
 }
 
 /*下線を擬似要素にて作成*/
@@ -158,7 +160,7 @@ img{
 }
 
 .work_style p{
-    margin: 14px 10px;
+    margin: 18px 10px;
     line-height: 1.5;
-    padding-bottom: 12px;
+    padding: 0 3px;
 }
