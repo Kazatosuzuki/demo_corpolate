@@ -5,10 +5,15 @@
     <title>Sample Web</title>
     <meta name="description" content="デザイナー特化の株式会社">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <!-- CSS -->
-     <link rel="stylesheet" href="https://unpkg.com/destyle.css@1.0.5/destyle.css">
-     <link href="CSS/style.css" rel="stylesheet">
-     <link rel="icon" type="images/svg" href="images/favicon.svg">
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/destyle.css@1.0.5/destyle.css">
+    <link href="CSS/style.css" rel="stylesheet">
+    <link rel="icon" type="images/svg" href="images/favicon.svg">
+    <!--JS-->
+    <script src="script.js"></script>
+    <!--include chart.js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script> -->
 </head>
 <body>
     <div class="container">
@@ -40,6 +45,9 @@
                         ただ制作物を作るのではなく、使い勝手がよく美しいものを生み出しています。
                         あなたも、誰かの世界が変わるようなクリエイティブなWEBサイトを世界中に広めませんか？
                     </p>
+                    <div>
+                        <canvas id="pie_chart"></canvas>
+                    </div>                      
                 </div>
                 <div class="work_style">
                     <h2 class="work_style_title">あなたの生活にあわせたスタイルで働けます</h2>
