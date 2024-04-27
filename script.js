@@ -1,20 +1,37 @@
+//円グラフここから
 const ctx = document.getElementById('pie_chart');
 
   new Chart(ctx, {
-    type: 'bar',
+    type: 'pie',
     data: {
-      labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+      labels: ['Webデザイナー', 'Webディベロッパー', 'サーバーエンジニア', '営業職'],
       datasets: [{
-        label: '# of Votes',
-        data: [12, 19, 3, 5, 2, 3],
-        borderWidth: 1
+        backgroundColor: [
+          "#2d3374",
+          "#3a7edf",
+          "#9bcbf8",
+          "#bbb"
+        ],
+        data: [14, 9, 8, 6],
       }]
     },
+    plugins: [ChartDataLabels], // pluginとしてchartdatalabelsを追加
     options: {
-      scales: {
-       y: {
-          beginAtZero: true
-      	}
-     }
-   }
-});
+      plugins:{
+        legend: {
+          display: false,
+        },
+        datalabels:{// パーセンテージからラベル表記に変更
+          formatter: function(value, context) {
+            return context.chart.data.labels[context.dataIndex];
+          },
+          //フォントと色の設定
+          color:"#fff",
+          font:{
+            size: 13,
+          }
+        }
+      }
+    }
+  });
+//円グラフここまで

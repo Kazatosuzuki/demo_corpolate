@@ -145,6 +145,11 @@ img{
     padding: 0 3px;
 }
 
+/*円グラフの内部余白の調整*/
+.pie{
+    padding: 16px;
+}
+
 .work_style_title{
     font-size: 20px;
     margin-top: 14px;
@@ -164,4 +169,8 @@ img{
     margin: 18px 10px;
     line-height: 1.5;
     padding: 0 3px;
+}
+
+.bar p{
+    text-align: center;
 }

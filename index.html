@@ -9,11 +9,6 @@
     <link rel="stylesheet" href="https://unpkg.com/destyle.css@1.0.5/destyle.css">
     <link href="CSS/style.css" rel="stylesheet">
     <link rel="icon" type="images/svg" href="images/favicon.svg">
-    <!--JS-->
-    <script src="script.js"></script>
-    <!--include chart.js-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script> -->
 </head>
 <body>
     <div class="container">
@@ -45,7 +40,7 @@
                         ただ制作物を作るのではなく、使い勝手がよく美しいものを生み出しています。
                         あなたも、誰かの世界が変わるようなクリエイティブなWEBサイトを世界中に広めませんか？
                     </p>
-                    <div>
+                    <div class="pie">
                         <canvas id="pie_chart"></canvas>
                     </div>                      
                 </div>
@@ -56,6 +51,10 @@
                         リモート勤務で活躍している社員は全体の3分の1となり、年々増加しています。
                         自宅やコワーキングスペースなど、あなたの一番集中できる場所で仕事に取り組んでみてください。
                     </p>
+                    <div class="bar">
+                        <canvas id="bar_chart"></canvas>
+                        <p>リモート社員数の推移</p>
+                    </div>       
                 </div>
             </main>
     </div>
@@ -68,5 +67,10 @@
             <li><a href="form.html">お問合せ</a></li>
         </ul>
     </footer>
+    <!--include chart.js & chartjs-plugin-datalabels-->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.0/dist/chart.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0 "></script>
+    <!--JS-->
+    <script src="script.js"></script>
 </body>
 </html>
