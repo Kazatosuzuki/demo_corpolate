@@ -16,6 +16,8 @@ img{
     line-height: 1.4;
 }
 /*共通項目終了*/
+
+/*index.htmlここから*/
 .header{
     display: flex;
     justify-content: space-between;
@@ -44,6 +46,7 @@ img{
     padding-right: 14px;
 }
 
+/*ナビゲーションに画像の疑似要素を追加する*/
 .main_nav li:first-child:before{
     content: '';
     background-image: url(../images/house-solid.svg);
@@ -72,6 +75,12 @@ img{
     width: 16px;
     height: 16px;
     margin-left: 8px;
+}
+
+.main_nav li a:hover{
+    color: #696969;
+    background: #f8f8ff;
+    transition: 0.5s;
 }
 
 .job_recruitment{
@@ -178,4 +187,88 @@ img{
 }
 .bar p{
     text-align: center;
+}
+
+/*footer*/
+footer{
+    background: #0000cd;
+    padding: 16px;
+}
+.footer_recruitment{
+    font-size: 20px;
+    color: black;
+    border: 1px solid #f5deb3;
+    background: #f5deb3;
+    display: block;
+    padding: 16px 64px;
+    margin: 0 17px 24px 11px;
+    box-sizing: border-box;
+    text-align: center;
+    text-decoration: none;
+    
+}
+
+.footer_recruitment:hover{
+    background: #deb887;
+    transition: 0.5s;
+}
+
+.footer_nav{
+    padding: 4px 24px;
+    text-align: center;
+}
+
+.footer_nav li{
+    padding-bottom: 4px;
+}
+
+.footer_nav li a{
+    color: #fff;
+    line-height: 1.4;
+}
+/*index.htmlここまで*/
+
+/*Desktop_size*/
+@media screen and (min-width:600px){
+    /*共通項目*/
+    .container{
+        margin-top: 24px;
+    }
+    .logo{
+        width: 200px;
+        margin-left: 14px;
+    }
+    .main_nav{
+        font-size: 20px;
+    }
+    .main_nav li:first-child{
+        padding-right: 32px;
+    }
+    
+    .main_nav li:nth-child(2){
+        padding-right: 32px;
+    }
+    
+    .main_nav li:last-child{
+        padding-right: 40px;
+    }
+
+    /*疑似要素の画像を非表示にする*/
+    .main_nav li:first-child:before,
+    .main_nav li:nth-child(2):before,
+    .main_nav li:last-child:before{
+        display: none;
+    }
+    
+    .main_nav li a:hover{
+        border-bottom: 3px solid #0000cd;
+        transition: 0s;
+        padding-bottom: 4px;
+        background: #fff;
+        color: black;
+    }
+    /*次の作業はここから実施*/
+    /* .job_recruitment{
+
+    } */
 }
