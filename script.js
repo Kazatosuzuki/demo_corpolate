@@ -1,7 +1,7 @@
+const pie = document.getElementById('pie_chart');
+const bar = document.getElementById('bar_chart');
 //円グラフここから
-const ctx = document.getElementById('pie_chart');
-
-  new Chart(ctx, {
+  new Chart(pie, {
     type: 'pie',
     data: {
       labels: ['Webデザイナー', 'Webディベロッパー', 'サーバーエンジニア', '営業職'],
@@ -17,6 +17,7 @@ const ctx = document.getElementById('pie_chart');
     },
     plugins: [ChartDataLabels], // pluginとしてchartdatalabelsを追加
     options: {
+      responsive: true,
       plugins:{
         legend: {
           display: false,
@@ -35,3 +36,33 @@ const ctx = document.getElementById('pie_chart');
     }
   });
 //円グラフここまで
+//棒グラフここから
+new Chart(bar,{
+  type: 'bar',
+  data:{
+    labels: ['2018年', '2019年', '2020年'],
+    datasets:[{
+    backgroundColor:[
+      "#3a7edf"
+    ],
+    data: [10, 16, 29],
+    }]
+  },
+  options: {
+    responsive: true,
+    plugins:{
+      legend: {
+        display: false,
+      },
+    },
+    scales: {
+      y: {
+        ticks: {
+          beginAtZero: true, // 0から始める
+          callback: (value) => `${value}人`,
+        }
+      }
+    }
+  },
+});
+//棒グラフここまで

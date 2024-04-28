@@ -171,6 +171,11 @@ img{
     padding: 0 3px;
 }
 
+/*棒グラフ*/
+.bar{
+    padding: 16px;
+    width: 100%;
+}
 .bar p{
     text-align: center;
 }
