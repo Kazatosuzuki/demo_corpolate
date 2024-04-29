@@ -267,8 +267,34 @@ footer{
         background: #fff;
         color: black;
     }
+
+    .job_recruitment{
+        height: auto;/*デスクトップ用に高さの調整*/
+        margin-right: 32px;
+        margin-bottom: 56px;
+    }
+
+    .challenge{
+        font-size: 36px;
+        margin: 140px 0 24px 16px;
+        font-weight: normal;
+        border: none;
+        background: none;
+        opacity: 1;/*半透明にする*/
+    }
+
+    .job_recruitment p{
+        width: 44%;
+        margin-left: 28px;
+    }
+
+    .job_recruitment a{
+        display: inline-block;
+        padding: 14px 64px;
+        margin-left: 32px;
+    }
     /*次の作業はここから実施*/
-    /* .job_recruitment{
+    /* .job_info{
 
     } */
 }
