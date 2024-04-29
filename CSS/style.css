@@ -148,7 +148,7 @@ img{
     height: 20px;
 }
 
-.job_info p{
+.job_info_txt p{
     margin: 14px 10px;
     line-height: 1.5;
     padding: 0 3px;
@@ -293,8 +293,35 @@ footer{
         padding: 14px 64px;
         margin-left: 32px;
     }
-    /*次の作業はここから実施*/
-    /* .job_info{
+    /*テキストと円グラフを横並びにする*/
+    .job_info{
+        display: flex;
+    }
 
-    } */
+    .flex_reverse{
+        flex-direction: row-reverse;
+    }
+
+    .pie{
+        width: 40%;
+        padding-left: 28px;
+    }
+
+    .job_info_txt{
+        margin-top: 84px;
+    }
+
+    .job_info_title{
+        font-size: 28px;
+        margin-top: 20px;
+    }
+
+    .job_info_txt p{
+        line-height: 1.7;
+        padding-right: 32px;
+    }
+
+    .job_info_title::after{
+        margin: 12px 0;
+    }
 }
