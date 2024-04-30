@@ -174,7 +174,7 @@ img{
     height: 20px;
 }
 
-.work_style p{
+.work_styke_txt p{
     margin: 18px 10px;
     line-height: 1.5;
     padding: 0 3px;
@@ -226,6 +226,11 @@ footer{
     color: #fff;
     line-height: 1.4;
 }
+
+.footer_nav li a:hover{
+    background: #b0c4de;
+    transition: 0.5s;
+}
 /*index.htmlここまで*/
 
 /*Desktop_size*/
@@ -234,6 +239,8 @@ footer{
     .container{
         margin-top: 24px;
     }
+    /*index.htmlここから*/
+    /*header*/
     .logo{
         width: 200px;
         margin-left: 14px;
@@ -268,6 +275,7 @@ footer{
         color: black;
     }
 
+    /*mainここから*/
     .job_recruitment{
         height: auto;/*デスクトップ用に高さの調整*/
         margin-right: 32px;
@@ -280,7 +288,7 @@ footer{
         font-weight: normal;
         border: none;
         background: none;
-        opacity: 1;/*半透明にする*/
+        opacity: 1;/*半透明にしない*/
     }
 
     .job_recruitment p{
@@ -324,4 +332,52 @@ footer{
     .job_info_title::after{
         margin: 12px 0;
     }
+
+    .work_style{
+        margin: 56px 16px;
+        display: flex;
+    }
+
+    .work_styke_txt{
+        margin: 36px 16px 0 0;
+    }
+
+    .work_style_title{
+        font-size: 28px;
+    }
+
+    .work_style_title:after{
+        margin: 12px 0;
+    }
+
+    .work_styke_txt p{
+        line-height: 1.7;
+        padding-right: 32px;
+    }
+
+    .bar{
+        width: 40%;
+        padding-right: 16px;
+    }
+    /*mainここまで*/
+    footer{
+        margin-top: 12px;
+        text-align: center;
+    }
+
+    .footer_recruitment{
+        margin-top: 24px;
+        display:inline-block;
+    }
+
+    .footer_nav{
+        display: flex;
+        justify-content: center;
+        margin: 12px 0;
+    }
+
+    .footer_nav li{
+        margin-right: 20px;
+    }
+    /*index.htmlここまで*/
 }
