@@ -185,6 +185,7 @@ img{
     padding: 16px;
     width: 100%;
 }
+
 .bar p{
     text-align: center;
 }
@@ -233,6 +234,43 @@ footer{
 }
 /*index.htmlここまで*/
 
+/*job.htmlここから*/
+.wrapper{
+    border: 2px solid #f0f8ff;
+    margin: 16px;
+}
+
+.recruitment_detail{
+    text-align: center;
+    margin: 16px 0;
+}
+
+.recruitment_detail h1{
+    font-size: 24px;
+    position: relative;
+}
+
+.recruitment_detail h1::after{
+    content: '';
+    border-bottom: 4px solid #deb887;
+    display:block;
+    width: 160px;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    margin: 24px 0;
+}
+
+.recruitment_detail p{
+    margin: 32px 0;
+    padding: 0 12px;
+}
+/*次の作業はここから実施*/
+/* .detail_table{
+
+} */
 /*Desktop_size*/
 @media screen and (min-width:600px){
     /*共通項目*/
@@ -356,6 +394,7 @@ footer{
     }
 
     .bar{
+        margin: 44px 4px;
         width: 40%;
         padding-right: 16px;
     }
