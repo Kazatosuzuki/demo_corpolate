@@ -238,6 +238,24 @@ footer{
 .wrapper{
     border: 2px solid #f0f8ff;
     margin: 32px 16px;
+    position: relative;
+    background-color: #fff;
+}
+
+/*このページにしか表示しない部分*/
+.wrapper::before{
+    content: '';
+    display: block;
+    position: absolute;
+    background-image: url(../images/bg-job.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;/*横と縦の位置どこから切り抜くか*/
+    background-size: cover;
+    width: 292px;
+    height: 140px;
+    top: -26px;
+    left: -24px;
+    z-index: -1;
 }
 
 .recruitment_detail{
