@@ -21,29 +21,31 @@ img{
 .header{
     display: flex;
     justify-content: space-between;
-    margin: 16px;
+    margin: 32px 16px;
 }
 
 .logo{
-    width: 150px;
+    width: 120px;
 }
 
 .main_nav{
     display: flex;
     justify-content:space-between;
-    font-size: 15px;
+    font-size: 12px;
+    font-family: Arial, Helvetica;
+    color: #696969;
 }
 
 .main_nav li:first-child{
-    padding-right: 10px;
+    padding-right: 24px;
 }
 
 .main_nav li:nth-child(2){
-    padding-right: 10px;
+    padding-right: 24px;
 }
 
 .main_nav li:last-child{
-    padding-right: 14px;
+    padding-right: 16px;
 }
 
 /*ナビゲーションに画像の疑似要素を追加する*/
@@ -52,9 +54,9 @@ img{
     background-image: url(../images/house-solid.svg);
     background-repeat: no-repeat;
     display: block;
-    width: 16px;
-    height: 16px;
-    margin-left: 14px;
+    width: 24px;
+    height: 24px;
+    margin-left: 5px;
 }
 
 .main_nav li:nth-child(2):before{
@@ -62,9 +64,9 @@ img{
     background-image: url(../images/bars-solid.svg);
     background-repeat: no-repeat;
     display: block;
-    width: 16px;
-    height: 16px;
-    margin-left: 22px;
+    width: 24px;
+    height: 24px;
+    margin-left: 13px;
 }
 
 .main_nav li:last-child:before{
@@ -72,9 +74,9 @@ img{
     background-image: url(../images/file-solid.svg);
     background-repeat: no-repeat;
     display: block;
-    width: 16px;
-    height: 16px;
-    margin-left: 8px;
+    width: 24px;
+    height: 24px;
+    margin-left: 2px;
 }
 
 .main_nav li a:hover{
@@ -192,17 +194,17 @@ img{
 
 /*footer*/
 footer{
-    background: #0000cd;
+    background: #2d3374;
     padding: 16px;
 }
 .footer_recruitment{
     font-size: 20px;
-    color: black;
-    border: 1px solid #f5deb3;
-    background: #f5deb3;
+    color: #555;
+    border: 1px solid #d0bea2;
+    background: #d0bea2;
     display: block;
-    padding: 16px 64px;
-    margin: 0 17px 24px 11px;
+    padding: 20px 0;
+    margin: 35px 0 72px 0;
     box-sizing: border-box;
     text-align: center;
     text-decoration: none;
@@ -217,15 +219,17 @@ footer{
 .footer_nav{
     padding: 4px 24px;
     text-align: center;
+    margin-bottom: 16px;
 }
 
 .footer_nav li{
-    padding-bottom: 4px;
+    padding-bottom: 12px;
 }
 
 .footer_nav li a{
-    color: #fff;
+    color: #d5d7e4;
     line-height: 1.4;
+    font-family: Arial, Helvetica;
 }
 
 .footer_nav li a:hover{
@@ -236,8 +240,8 @@ footer{
 
 /*job.htmlここから*/
 .wrapper{
-    border: 2px solid #f0f8ff;
-    margin: 32px 16px;
+    border: 1px solid #dcdcdc;
+    margin: 112px 11px;
     position: relative;
     background-color: #fff;
 }
@@ -251,16 +255,17 @@ footer{
     background-repeat: no-repeat;
     background-position: center center;/*横と縦の位置どこから切り抜くか*/
     background-size: cover;
-    width: 292px;
-    height: 140px;
+    width: 290px;
+    height: 180px;
     top: -26px;
     left: -24px;
     z-index: -1;
+    margin-top:-60px;
 }
 
 .recruitment_detail{
     text-align: center;
-    margin: 32px 0;
+    margin: 53px 0;
 }
 
 .recruitment_detail h1{
@@ -270,7 +275,7 @@ footer{
 
 .recruitment_detail h1::after{
     content: '';
-    border-bottom: 4px solid #deb887;
+    border-bottom: 4px solid #d0bea2;
     display:block;
     width: 160px;
     height: 20px;
@@ -278,22 +283,26 @@ footer{
     top: 50%;
     left: 50%;
     transform: translateY(-50%) translateX(-50%);
-    margin: 32px 0;
+    margin: 48px 0;
 }
 
 .recruitment_detail p{
-    margin: 56px 0;
-    padding: 0 16px;
+    margin-top: 81px;
+    margin-bottom: 60px;
+    padding: 0 32px;
+    line-height: 1.8;
+    font-family: Arial, Helvetica;
 }
 
 /*募集要項*/
 .detail_table{
     line-height: 1.7;
-    margin: 16px;
+    margin: 32px;
 }
 
 .details {
     width: 100%;
+    font-family: Arial, Helvetica;
 }
 
 .details th,
@@ -302,24 +311,24 @@ footer{
 }
 
 .details th:nth-child(odd){
-    background-color: #fffaf0;
+    background-color: #f8f6f2;
     font-weight: lighter;
     padding: 12px;
 }
 
 .details td:nth-child(even){
-    padding: 12px 16px;
+    padding: 24px 16px;
 }
 
 /*応募フォーム*/
 .detail_table a{
     font-size: 20px;
     color: #fff;
-    border: 1px solid #0000cd;
-    background: #0000cd;
+    border: 1px solid #2d3374;
+    background: #2d3374;
     display: block;
     padding: 16px 64px;
-    margin: 16px 17px 24px 11px;
+    margin: 32px 0px 24px 0px;
     box-sizing: border-box;
     text-align: center;
     text-decoration: none;
@@ -342,7 +351,7 @@ footer{
 
 .recruitment_flow h1::after{
     content: '';
-    border-bottom: 4px solid #deb887;
+    border-bottom: 4px solid #d0bea2;
     display:block;
     width: 160px;
     height: 20px;
@@ -350,12 +359,14 @@ footer{
     top: 50%;
     left: 50%;
     transform: translateY(-50%) translateX(-50%);
-    margin: 32px 0;
+    margin: 53px 0;
 }
 
 .flow{
-    margin-top: 52px;
+    margin-top: 62px;
     width: 100%;
+    margin-left: 16px;
+    margin-bottom: 60px;
 }
 
 .flow th,
@@ -370,7 +381,7 @@ footer{
 }
 
 .flow td:nth-child(even){
-    padding: 0 16px 12px 16px;
+    padding: 0 32px 12px 32px;
 }
 
 .flow_num{
