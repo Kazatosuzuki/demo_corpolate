@@ -92,19 +92,20 @@ img{
 
 .challenge{
     font-size: 24px;
-    font-weight: bold;
+    font-family: 'Sawarabi Mincho', sans-serif;
     border: 2px solid #fff;
     background: #fff;
     opacity: .6;/*半透明にする*/
     display: inline-block;
-    margin-top: 125px;
-    margin-bottom: 24px;
-    padding: 14px;
+    margin-top: 116px;
+    margin-bottom: 40px;
+    padding: 12px;
+    margin-left: 16px;
 }
 
 .job_recruitment p{
     margin-top: 6px;
-    line-height: 1.6;
+    line-height: 1.7;
     margin-bottom: 24px;
     font-size: 18px;
     margin-right: 7px;
@@ -115,11 +116,11 @@ img{
 .job_recruitment a{
     font-size: 20px;
     color: #fff;
-    border: 1px solid #0000cd;
-    background: #0000cd;
+    border: 1px solid #2d3374;
+    background: #2d3374;
     display: block;
     padding: 16px 64px;
-    margin: 0 17px 24px 11px;
+    margin: 0 17px 44px 11px;
     box-sizing: border-box;
     text-align: center;
     text-decoration: none;
@@ -131,20 +132,21 @@ img{
 }
 
 .job_info{
-    background: #ffffe0;
-    margin-top: 20px;
+    background: #f8f6f2;
+    margin-top: 32px;
+    padding: 4px;
 }
 
 .job_info_title{
-    font-size: 20px;
-    margin-top: 14px;
+    font-size: 24px;
+    margin-top: 28px;
     padding: 14px 0 14px 16px;
 }
 
 /*下線を擬似要素にて作成*/
 .job_info_title::after{
     content: '';
-    border-bottom: 4px solid #deb887;
+    border-bottom: 4px solid #d0bea2;
     display: block;
     width: 180px;
     height: 20px;
@@ -152,33 +154,35 @@ img{
 
 .job_info_txt p{
     margin: 14px 10px;
-    line-height: 1.5;
+    line-height: 1.7;
     padding: 0 3px;
 }
 
 /*円グラフの内部余白の調整*/
 .pie{
+    margin: 40px 0;
     padding: 16px;
 }
 
 .work_style_title{
-    font-size: 20px;
-    margin-top: 14px;
+    font-size: 24px;
+    margin-top: 32px;
     padding: 14px 0 14px 16px;
 }
 
 /*下線を擬似要素にて作成*/
 .work_style_title::after{
     content: '';
-    border-bottom: 4px solid #deb887;
+    border-bottom: 4px solid #d0bea2;
     display: block;
     width: 180px;
     height: 20px;
+    margin: 12px 0;
 }
 
 .work_styke_txt p{
     margin: 18px 10px;
-    line-height: 1.5;
+    line-height: 1.7;
     padding: 0 3px;
 }
 
@@ -190,6 +194,7 @@ img{
 
 .bar p{
     text-align: center;
+    margin-bottom: 32px;
 }
 
 /*footer*/
@@ -230,6 +235,7 @@ footer{
     color: #d5d7e4;
     line-height: 1.4;
     font-family: Arial, Helvetica;
+    font-size: 16px;
 }
 
 .footer_nav li a:hover{
