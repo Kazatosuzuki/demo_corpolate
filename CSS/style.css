@@ -398,17 +398,24 @@ footer{
 @media screen and (min-width:600px){
     /*共通項目*/
     .container{
-        margin-top: 24px;
+        font-family: serif;
     }
     /*index.htmlここから*/
     /*header*/
+    .header{
+        margin-top: 24px;
+        padding: 0px 41px 0 62px;
+    }
+
     .logo{
         width: 200px;
         margin-left: 14px;
     }
+
     .main_nav{
         font-size: 20px;
     }
+
     .main_nav li:first-child{
         padding-right: 32px;
     }
@@ -428,6 +435,11 @@ footer{
         display: none;
     }
     
+    .main_nav li a{
+        font-family: serif;
+        font-size: 22px;
+    }
+
     .main_nav li a:hover{
         border-bottom: 3px solid #0000cd;
         transition: 0s;
@@ -438,14 +450,15 @@ footer{
 
     /*mainここから*/
     .job_recruitment{
-        height: auto;/*デスクトップ用に高さの調整*/
-        margin-right: 32px;
+        margin-right: 16px;
         margin-bottom: 56px;
+        padding-left: 62px;
     }
 
     .challenge{
-        font-size: 36px;
-        margin: 140px 0 24px 16px;
+        font-size: 40px;
+        font-family: serif;
+        margin: 160px 0 24px 16px;
         font-weight: normal;
         border: none;
         background: none;
@@ -530,6 +543,7 @@ footer{
     .footer_recruitment{
         margin-top: 24px;
         display:inline-block;
+        padding:24px 60px;
     }
 
     .footer_nav{
