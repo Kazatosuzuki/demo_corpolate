@@ -403,7 +403,7 @@ footer{
     /*index.htmlここから*/
     /*header*/
     .header{
-        margin-top: 24px;
+        margin-top: 30px;
         padding: 0px 41px 0 62px;
     }
 
@@ -556,4 +556,52 @@ footer{
         margin-right: 20px;
     }
     /*index.htmlここまで*/
+
+    /*job.htmlここから*/
+    .wrapper{
+        margin: 120px 230px;
+        padding: 0 22px;
+    }
+
+    /*このページにしか表示しない部分*/
+    .wrapper::before{
+        max-width: 1300px;
+        width: 850px;
+        height: 500px;
+        top: -68px;
+        left: -230px;
+        z-index: -1;
+        margin-top: -30px;
+    }
+    
+    .recruitment_detail h1{
+        font-size: 28px;
+    }
+    
+    .recruitment_detail p{
+        font-size: 15px;
+    }
+
+    /*募集要項*/
+    .details th,
+    .details td{
+        display: table-cell;/*defaltへ戻す*/
+    }
+
+    .details th{
+        text-align: center;
+    }
+
+    .details tr:nth-child(odd){
+        background-color: #f8f6f2;
+        padding: 20px;
+    }
+
+    .details tr:nth-child(even){
+        background-color: #fff;
+    }
+
+    .details td:nth-child(even){
+        padding: 24px 16px;
+    }
 }
