@@ -604,22 +604,19 @@ footer{
 
     /*応募フォーム*/
     .details_form{
-        position: relative;
+        text-align: center;
     }
     
     .details_form a{
-        display: block;
-        padding: 16px 28px;
-        margin: 64px 0px 64px 0;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translateY(-50%) translateX(-50%);
+        display: inline-block;
+        margin: 42px;
     }
     
     /*採用までの流れ*/
     .recruitment_flow h1{
         font-size: 28px;
-        margin-top: 150px;
+        margin-top: 4px;
     }
+
+    /*つぎはここから作業実施する*/
 }
