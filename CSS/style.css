@@ -327,7 +327,7 @@ footer{
 }
 
 /*応募フォーム*/
-.detail_table a{
+.details_form a{
     font-size: 20px;
     color: #fff;
     border: 1px solid #2d3374;
@@ -340,7 +340,7 @@ footer{
     text-decoration: none;
 }
 
-.detail_table a:hover{
+.details_form a:hover{
     background: #4169e1;
     transition: 0.5s;
 }
@@ -586,22 +586,40 @@ footer{
     .details th,
     .details td{
         display: table-cell;/*defaltへ戻す*/
+        color: #696969;
     }
 
     .details th{
-        text-align: center;
+        width: 24%;
+        vertical-align: middle;
     }
 
     .details tr:nth-child(odd){
         background-color: #f8f6f2;
-        padding: 20px;
     }
 
-    .details tr:nth-child(even){
+    .details tr:nth-child(even) th {/*thも上書きしないと反映されない*/
         background-color: #fff;
     }
 
-    .details td:nth-child(even){
-        padding: 24px 16px;
+    /*応募フォーム*/
+    .details_form{
+        position: relative;
+    }
+    
+    .details_form a{
+        display: block;
+        padding: 16px 28px;
+        margin: 64px 0px 64px 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
+    }
+    
+    /*採用までの流れ*/
+    .recruitment_flow h1{
+        font-size: 28px;
+        margin-top: 150px;
     }
 }
