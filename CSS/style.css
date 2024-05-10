@@ -245,28 +245,21 @@ footer{
 /*index.htmlここまで*/
 
 /*job.htmlここから*/
+.page_job{
+    /*180degで上から下へ背景のグラデーション変更するで。詳細は上半分は白、下半分は灰色に変えてね*/
+    background-image: url(../images/bg-job.jpg), linear-gradient(180deg, transparent 0%, transparent 50%, #F8F6F2 50%, #F8F6F2 100%);
+    background-position: left 106px, 0 0;
+    background-size: 70vw auto, contain;
+    background-repeat: no-repeat;
+}
+
 .wrapper{
     border: 1px solid #dcdcdc;
     margin: 112px 11px;
     position: relative;
     background-color: #fff;
-}
-
-/*このページにしか表示しない部分*/
-.wrapper::before{
-    content: '';
-    display: block;
-    position: absolute;
-    background-image: url(../images/bg-job.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;/*横と縦の位置どこから切り抜くか*/
-    background-size: cover;
-    width: 290px;
-    height: 180px;
-    top: -26px;
-    left: -24px;
-    z-index: -1;
-    margin-top:-60px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .2);
+    overflow: hidden;
 }
 
 .recruitment_detail{
@@ -561,17 +554,6 @@ footer{
     .wrapper{
         margin: 120px 230px;
         padding: 0 22px;
-    }
-
-    /*このページにしか表示しない部分*/
-    .wrapper::before{
-        max-width: 1300px;
-        width: 850px;
-        height: 500px;
-        top: -68px;
-        left: -230px;
-        z-index: -1;
-        margin-top: -30px;
     }
     
     .recruitment_detail h1{
