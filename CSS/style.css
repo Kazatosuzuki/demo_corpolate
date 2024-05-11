@@ -202,6 +202,7 @@ footer{
     background: #2d3374;
     padding: 16px;
 }
+
 .footer_recruitment{
     font-size: 20px;
     color: #555;
@@ -259,7 +260,7 @@ footer{
     position: relative;
     background-color: #fff;
     box-shadow: 0 0 6px rgba(0, 0, 0, .2);
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .recruitment_detail{
@@ -341,6 +342,7 @@ footer{
 .recruitment_flow{
     line-height: 1.7;
 }
+
 .recruitment_flow h1{
     font-size: 24px;
     position: relative;
@@ -361,31 +363,33 @@ footer{
     margin: 53px 0;
 }
 
-.flow{
-    margin-top: 62px;
-    width: 100%;
-    margin-left: 16px;
-    margin-bottom: 60px;
+/*タイムライン*/
+.timeline{
+    margin: 78px 32px 84px 32px;
+    list-style: decimal inside;
+} 
+
+.timeline_item{
+    box-sizing: border-box;
+    margin-bottom: 20px;
 }
 
-.flow th,
-.flow td{
-    display: block;
-}
-
-.flow th:nth-child(odd){
-    font-size: 20px;
-    font-weight: lighter;
-    padding: 12px;
-}
-
-.flow td:nth-child(even){
-    padding: 0 32px 12px 32px;
-}
-
-.flow_num{
+.timeline_item::marker{
     font-size: 14px;
 }
+
+.timeline_title{
+    display: inline-block;
+    font-size: 23px;
+}
+
+.timeline_detail{
+    margin: 8px 0;
+    font-family: Arial, Helvetica;
+    color: #696969;
+    font-size: 16px;
+}
+
 /*job.htmlここまで*/
 /*Desktop_size*/
 @media screen and (min-width:600px){
