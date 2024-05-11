@@ -400,13 +400,12 @@ footer{
     /*index.htmlここから*/
     /*header*/
     .header{
-        margin-top: 30px;
-        padding: 0px 41px 0 62px;
+        margin: 36px 12px 0 12px;
     }
 
     .logo{
         width: 200px;
-        margin-left: 14px;
+        margin-left: 20px;
     }
 
     .main_nav{
@@ -556,7 +555,7 @@ footer{
 
     /*job.htmlここから*/
     .wrapper{
-        margin: 120px 230px;
+        margin: 120px 160px;
         padding: 0 22px;
     }
     
@@ -600,9 +599,75 @@ footer{
     
     /*採用までの流れ*/
     .recruitment_flow h1{
-        font-size: 28px;
+        font-size: 30px;
         margin-top: 4px;
     }
 
-    /*つぎはここから作業実施する*/
+    /*タイムライン*/
+    .timeline_item{
+        list-style: none;
+        position: relative;
+        overflow: hidden;/*崩れ防止*/
+        margin-bottom: 32px;
+    } 
+
+    .timeline_title{
+        float: left;
+        width: 24%;
+        padding: 16px 20px 12px 2px;
+        text-align: right;
+    }
+
+    .timeline_detail{
+        float: left;
+        width: 76%;
+        border-left: 4px solid #f8f6f2;
+        padding: 12px 0 12px 40px;
+        font-size: 18px;
+    }
+
+    /*アイコンの設定（Macbook pro2020ver）*/
+    .icon_file::before{
+        content: "";
+        width: 30px;
+        height: 40px;
+        display: block;
+        position: absolute;
+        background: url(../images/file-solid.svg) no-repeat;
+        top: 18px;
+        left: 236px;
+    }
+
+    .icon_code::before{
+        content: "";
+        width: 30px;
+        height: 40px;
+        display: block;
+        position: absolute;
+        background: url(../images/code-solid.svg) no-repeat;
+        top: 20px;
+        left: 236px;
+    }
+
+    .icon_classic::before{
+        content: "";
+        width: 30px;
+        height: 40px;
+        display: block;
+        position: absolute;
+        background: url(../images/comment-dots-regular.svg) no-repeat;
+        top: 20px;
+        left: 236px;
+    }
+
+    .icon_hand::before{
+        content: "";
+        width: 30px;
+        height: 40px;
+        display: block;
+        position: absolute;
+        background: url(../images/handshake-regular.svg) no-repeat;
+        top: 20px;
+        left: 236px;
+    }
 }
