@@ -84,18 +84,20 @@
                             <tr>
                                 <th>現在の状態</th>
                                 <td>
-                                    <select name="status" id="status">
-                                        <option value="employee">会社に在籍中</option>
-                                        <option value="freelance">フリーランス</option>
-                                        <option value="student">学生</option>
-                                        <option value="vacation">休暇中</option>
-                                    </select>
+                                    <div class="select_box">
+                                        <select name="status" id="status">
+                                            <option value="employee">会社に在籍中</option>
+                                            <option value="freelance">フリーランス</option>
+                                            <option value="student">学生</option>
+                                            <option value="vacation">休暇中</option>
+                                        </select>
+                                    </div>
                                 </td>
                             </tr>
                             <tr>
                                 <th>自己PR</th>
                                 <td>
-                                    <input type="text" id="promote" name="promote">
+                                    <textarea placeholder="例：これまでの経歴、学んできたこと、今取り組んでいるプロジェクト等"></textarea>
                                 </td>
                             </tr>
                         </table>

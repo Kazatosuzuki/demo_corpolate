@@ -462,11 +462,54 @@ input[type="checkbox"]{
     margin-right: 4px;
 }
 
+/*下向き矢印の追加（参考書参照）*/
+.select_box{
+    position: relative;
+}
+
+.select_box::after{
+    position: absolute;
+    display: inline-block;
+    top: 10px;
+    right: 16px;
+    /*Font Awesomeの設定(無課金のためダミー設定)*/
+    font-family: 'Font Awesome 5 pro';
+    font-weight: 900;
+    content: '\f878';
+    color: #bbb;
+}
+
 select{
     border: 1px solid #bbb;
     padding: 8px;
     width: 100%;
     background: #fff;
+}
+
+textarea{
+    height: 160px;
+    border: 1px solid #bbb;
+    padding: 4px;
+    width: 100%;
+    background: #fff;
+}
+
+.details_form{
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+    border: 1px solid #2d3374;
+    background: #2d3374;
+    display: block;
+    padding: 16px 64px;
+    margin: 48px 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.details_form:hover{
+    background: #4169e1;
+    transition: 0.5s;
 }
 
 /*Desktop_size*/
@@ -710,7 +753,7 @@ select{
         position: absolute;
         top: 24px;
         left: -24px;
-        /*Font Awesomeの設定*/
+        /*Font Awesomeの設定(無課金のためダミー設定)*/
         font-family: 'Font Awesome 5 pro';
         font-weight: 900;
         color: #fff;
