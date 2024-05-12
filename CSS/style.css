@@ -269,7 +269,7 @@ footer{
 }
 
 .recruitment_detail h1{
-    font-size: 24px;
+    font-size: 25px;
     position: relative;
 }
 
@@ -317,7 +317,7 @@ footer{
 }
 
 .details td:nth-child(even){
-    padding: 24px 16px;
+    padding: 10px 16px 24px 16px;
 }
 
 /*応募フォーム*/
@@ -389,8 +389,86 @@ footer{
     color: #696969;
     font-size: 16px;
 }
-
 /*job.htmlここまで*/
+
+/*form.htmlここから*/
+.page_form{
+    /*180degで上から下へ背景のグラデーション変更するで。詳細は上半分は白、下半分は灰色に変えてね*/
+    background-image: url(../images/bg-form.jpg), linear-gradient(180deg, transparent 0%, transparent 50%, #F8F6F2 50%, #F8F6F2 100%);
+    background-position: right 106px, 0 0;
+    background-size: 70vw auto, contain;
+    background-repeat: no-repeat;
+}
+
+.form_detail{
+    margin: 53px 0;
+}
+
+.form_detail h1{
+    text-align: center;
+    font-size: 25px;
+    position: relative;
+}
+
+.form_detail h1::after{
+    content: '';
+    border-bottom: 4px solid #d0bea2;
+    display:block;
+    width: 160px;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    margin: 48px 0;
+}
+
+.main_note,
+.side_note{
+    padding: 0 32px;
+    line-height: 1.8;
+    font-family: Arial, Helvetica;
+    color: #696969;
+}
+
+.main_note{
+    margin-top: 80px;
+}
+
+.side_note{
+    font-size: 14.5px;
+}
+
+/*inputタグの設定*/
+input[type="text"],
+input[type="email"],
+input[type="url"]{
+    border: 1px solid #bbb;
+    padding: 4px;
+    width: 100%;
+    background: #fff;
+}
+
+/*希望勤務地の設定*/
+.layout_adjust{
+    display: block;
+    margin: 14px 0;
+}
+
+input[type="checkbox"]{
+    width: 26px;
+    height: 26px;
+    border: 2px solid #bbb;
+    margin-right: 4px;
+}
+
+select{
+    border: 1px solid #bbb;
+    padding: 8px;
+    width: 100%;
+    background: #fff;
+}
+
 /*Desktop_size*/
 @media screen and (min-width:600px){
     /*共通項目*/

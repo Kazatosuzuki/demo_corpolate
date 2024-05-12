@@ -26,7 +26,7 @@
             </header>
             <main>
                 <div class="wrapper">
-                    <div class="recruitment_detail">
+                    <div class="form_detail">
                         <h1>応募フォーム</h1>
                         <p class="main_note">
                             下記の応募フォームにすべてご記入の上、送信してください。
@@ -42,36 +42,43 @@
                             <tr>
                                 <th>お名前</th>
                                 <td>
-                                    <input type="text" id="fullname" name="fullname">
+                                    <input type="text" id="fullname" name="fullname" placeholder="例：黒幕企業社畜">
                                 </td>
                             </tr>
                             <tr>
                                 <th>フリガナ</th>
                                 <td>
-                                    <input type="text" id="furigana" name="furigana">
+                                    <input type="text" id="furigana" name="furigana" placeholder="例：ブラックキギョウノシャチク">
                                 </td>
                             </tr>
                             <tr>
                                 <th>メールアドレス</th>
                                 <td>
-                                    <input type="text" id="email" name="email">
+                                    <input type="email" id="email" name="email" placeholder="例：ilovework1919@gmail.com">
                                 </td>
                             </tr>
                             <tr>
                                 <th>ポートフォリオ</th>
                                 <td>
-                                    <input type="text" id="portfolio" name="portfolio">
+                                    <input type="url" id="portfolio" name="portfolio" placeholder="例：http//kichikushain.com">
                                 </td>
                             </tr>
                             <tr>
                                 <th>希望勤務地</th>
                                 <td>
-                                    <input type="checkbox" id="tokyo" name="work_place" value="TOKYO">
-                                    <label for="tokyo">東京</label>
-                                    <input type="checkbox" id="osaka" name="work_place" value="OSAKA">
-                                    <label for="tokyo">大阪</label>
-                                    <input type="checkbox" id="reomote" name="work_place" value="REMOTE">
-                                    <label for="tokyo">リモート勤務</label>
+                                    <div class="layout_adjust">
+                                        <input type="checkbox" id="tokyo" name="work_place" value="TOKYO">
+                                        <label for="tokyo">東京</label>
+                                    </div>
+                                    <div class="layout_adjust">
+                                        <input type="checkbox" id="osaka" name="work_place" value="OSAKA">
+                                        <label for="tokyo">大阪</label>
+                                    </div>
+                                    <div class="layout_adjust">    
+                                        <input type="checkbox" id="reomote" name="work_place" value="REMOTE">
+                                        <label for="tokyo">リモート勤務</label>
+                                    </div>    
+                                    
                                 </td>
                             </tr>
                             <tr>
