@@ -603,71 +603,55 @@ footer{
         margin-top: 4px;
     }
 
-    /*タイムライン*/
+    /*タイムライン(参考書参照)*/
     .timeline_item{
-        list-style: none;
-        position: relative;
-        overflow: hidden;/*崩れ防止*/
-        margin-bottom: 32px;
-    } 
+        display: flex;
+        margin-bottom: 0;
+    }
 
     .timeline_title{
-        float: left;
         width: 24%;
-        padding: 16px 20px 12px 2px;
+        padding: 32px 40px 32px 0;
         text-align: right;
     }
 
     .timeline_detail{
-        float: left;
+        border-left: 5px solid #f8f6f2;
         width: 76%;
-        border-left: 4px solid #f8f6f2;
-        padding: 12px 0 12px 40px;
-        font-size: 18px;
+        padding: 24px 0 24px 40px;
+        position: relative;
     }
 
-    /*アイコンの設定（Macbook pro2020ver）*/
-    .icon_file::before{
-        content: "";
-        width: 30px;
-        height: 40px;
+    .timeline_detail::before{
         display: block;
+        width: 36px;
+        height: 36px;
+        background: #d0bea2;
+        text-align: center;
+        padding: 1.6px;
         position: absolute;
-        background: url(../images/file-solid.svg) no-repeat;
-        top: 18px;
-        left: 236px;
+        top: 24px;
+        left: -24px;
+        /*Font Awesomeの設定*/
+        font-family: 'Font Awesome 5 pro';
+        font-weight: 900;
+        color: #fff;
+        font-size: 24px;
+    }
+
+    .icon_file::before{
+        content: '\f56e';
     }
 
     .icon_code::before{
-        content: "";
-        width: 30px;
-        height: 40px;
-        display: block;
-        position: absolute;
-        background: url(../images/code-solid.svg) no-repeat;
-        top: 20px;
-        left: 236px;
+        content: '\f121';
     }
 
     .icon_classic::before{
-        content: "";
-        width: 30px;
-        height: 40px;
-        display: block;
-        position: absolute;
-        background: url(../images/comment-dots-regular.svg) no-repeat;
-        top: 20px;
-        left: 236px;
+        content: '\f086';
     }
 
     .icon_hand::before{
-        content: "";
-        width: 30px;
-        height: 40px;
-        display: block;
-        position: absolute;
-        background: url(../images/handshake-regular.svg) no-repeat;
-        top: 20px;
-        left: 236px;
+        content: '\f205';
     }
 }

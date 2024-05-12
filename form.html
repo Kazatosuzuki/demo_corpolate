@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Detail 応募フォーム</title>
+    <meta name="description" content="デザイナー特化の株式会社">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/destyle.css@1.0.5/destyle.css">
+    <link href="CSS/style.css" rel="stylesheet">
+    <link rel="icon" type="images/svg" href="images/favicon.svg">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body class="page_form">
+    <div class="container">
+            <header class="header">
+                <a href="index.html"><img class="logo" src="images/logo.svg" alt="company_logo">
+                </a>
+                <nav>
+                    <ul class="main_nav">
+                        <li><a href="index.html">ホーム</a></li>
+                        <li><a href="job.html">募集要項</a></li>
+                        <li><a href="form.html">応募</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <main>
+                <div class="wrapper">
+                    <div class="recruitment_detail">
+                        <h1>応募フォーム</h1>
+                        <p class="main_note">
+                            下記の応募フォームにすべてご記入の上、送信してください。
+                        </p>
+                        <p class="side_note">
+                            ※ファイルの添付はできません。作品のファイルがある場合は
+                            必ずアップロードしたURLをご記入ください。
+                        </p>
+                    </div>
+                    <div class="detail_table">
+                        <form action="#">
+                        <table class="details">
+                            <tr>
+                                <th>お名前</th>
+                                <td>
+                                    <input type="text" id="fullname" name="fullname">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>フリガナ</th>
+                                <td>
+                                    <input type="text" id="furigana" name="furigana">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>メールアドレス</th>
+                                <td>
+                                    <input type="text" id="email" name="email">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>ポートフォリオ</th>
+                                <td>
+                                    <input type="text" id="portfolio" name="portfolio">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>希望勤務地</th>
+                                <td>
+                                    <input type="checkbox" id="tokyo" name="work_place" value="TOKYO">
+                                    <label for="tokyo">東京</label>
+                                    <input type="checkbox" id="osaka" name="work_place" value="OSAKA">
+                                    <label for="tokyo">大阪</label>
+                                    <input type="checkbox" id="reomote" name="work_place" value="REMOTE">
+                                    <label for="tokyo">リモート勤務</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>現在の状態</th>
+                                <td>
+                                    <select name="status" id="status">
+                                        <option value="employee">会社に在籍中</option>
+                                        <option value="freelance">フリーランス</option>
+                                        <option value="student">学生</option>
+                                        <option value="vacation">休暇中</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>自己PR</th>
+                                <td>
+                                    <input type="text" id="promote" name="promote">
+                                </td>
+                            </tr>
+                        </table>
+                        <div class="details_form">
+                            <input type="submit" value="送信する">
+                        </div>
+                        </form>
+                    </div>
+                </div>
+            </main>
+    </div>
+    <footer>
+        <ul class="footer_nav">
+            <li><a href="index.html">会社概要</a></li>
+            <li><a href="index.html">サービス内容</a></li>
+            <li><a href="job.html">スタッフブログ</a></li>
+            <li><a href="form.html">お問い合わせ</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
