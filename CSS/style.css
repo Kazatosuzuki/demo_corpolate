@@ -303,6 +303,8 @@ footer{
 .details {
     width: 100%;
     font-family: Arial, Helvetica;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 .details th,
@@ -314,6 +316,10 @@ footer{
     background-color: #f8f6f2;
     font-weight: lighter;
     padding: 12px;
+}
+
+.details td{
+    vertical-align: middle;
 }
 
 .details td:nth-child(even){
@@ -494,7 +500,7 @@ textarea{
     background: #fff;
 }
 
-.details_form{
+.submit_btn{
     text-align: center;
     font-size: 20px;
     color: #fff;
@@ -507,10 +513,16 @@ textarea{
     text-decoration: none;
 }
 
-.details_form:hover{
+.submit_btn:hover{
     background: #4169e1;
     transition: 0.5s;
 }
+
+/*formページのみのフッターの余白調整*/
+.form_footer{
+    margin: 36px 0;
+}
+/*form.htmlここまで*/
 
 /*Desktop_size*/
 @media screen and (min-width:600px){
@@ -680,8 +692,9 @@ textarea{
         padding: 0 22px;
     }
     
-    .recruitment_detail h1{
-        font-size: 28px;
+    .recruitment_detail h1,
+    .form_detail h1{
+        font-size: 30px;
     }
     
     .recruitment_detail p{
@@ -693,11 +706,11 @@ textarea{
     .details td{
         display: table-cell;/*defaltへ戻す*/
         color: #696969;
+        vertical-align: middle;
     }
 
     .details th{
         width: 24%;
-        vertical-align: middle;
     }
 
     .details tr:nth-child(odd){
@@ -711,11 +724,13 @@ textarea{
     /*応募フォーム*/
     .details_form{
         text-align: center;
+        margin-top: 12px;
     }
     
     .details_form a{
         display: inline-block;
         margin: 42px;
+        padding: 20px 56px;
     }
     
     /*採用までの流れ*/
@@ -774,5 +789,24 @@ textarea{
 
     .icon_hand::before{
         content: '\f205';
+    }
+
+    /*inputタグの設定*/
+    input[type="text"],
+    input[type="email"],
+    input[type="url"]{
+        padding: 10px;
+    }
+
+    .layout_adjust{
+        display: table-cell;
+    }
+    
+    input[type="checkbox"]{
+        margin-right: 0;
+    }
+
+    .layout_adjust label{
+        margin-right: 24px;
     }
 }
