@@ -500,20 +500,20 @@ textarea{
     background: #fff;
 }
 
-.submit_btn{
-    text-align: center;
+input[type="submit"]{
     font-size: 20px;
     color: #fff;
     border: 1px solid #2d3374;
     background: #2d3374;
     display: block;
-    padding: 16px 64px;
-    margin: 48px 0;
+    padding: 16px 98px;
+    margin: 32px 3px 40px 2px;
     box-sizing: border-box;
+    text-align: center;
     text-decoration: none;
 }
 
-.submit_btn:hover{
+input[type="submit"]:hover{
     background: #4169e1;
     transition: 0.5s;
 }
@@ -809,4 +809,16 @@ textarea{
     .layout_adjust label{
         margin-right: 24px;
     }
+
+    .submit_btn{/*中央揃え３点セット*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    input[type="submit"]{
+        padding: 20px 52px;
+        margin: 48px 3px 40px 2px;
+    }
+    /*form.htmmlここまで*/
 }
