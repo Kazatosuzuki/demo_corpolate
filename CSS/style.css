@@ -318,12 +318,13 @@ footer{
     padding: 12px;
 }
 
-.details td{
+.details th{
     vertical-align: middle;
+    line-height: 1;
 }
 
 .details td:nth-child(even){
-    padding: 10px 16px 24px 16px;
+    padding: 24px 16px;
 }
 
 /*応募フォーム*/
@@ -461,6 +462,10 @@ input[type="url"]{
     margin: 14px 0;
 }
 
+label[for="place"]{
+    vertical-align: middle;
+}
+
 input[type="checkbox"]{
     width: 26px;
     height: 26px;
@@ -473,17 +478,16 @@ input[type="checkbox"]{
     position: relative;
 }
 
-.select_box::after{
+/* .select_box::after{
     position: absolute;
     display: inline-block;
     top: 10px;
     right: 16px;
-    /*Font Awesomeの設定(無課金のためダミー設定)*/
     font-family: 'Font Awesome 5 pro';
     font-weight: 900;
     content: '\f878';
     color: #bbb;
-}
+} */
 
 select{
     border: 1px solid #bbb;
@@ -810,6 +814,10 @@ input[type="submit"]:hover{
         margin-right: 24px;
     }
 
+    select{
+        width: 40%;
+    }
+    
     .submit_btn{/*中央揃え３点セット*/
         display: flex;
         justify-content: center;
