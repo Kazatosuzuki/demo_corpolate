@@ -478,16 +478,16 @@ input[type="checkbox"]{
     position: relative;
 }
 
-/* .select_box::after{
+.select_box::after{
     position: absolute;
     display: inline-block;
     top: 10px;
     right: 16px;
-    font-family: 'Font Awesome 5 pro';
+    font-family: 'Font Awesome 6 Free';
     font-weight: 900;
-    content: '\f878';
+    content: '\f078';
     color: #bbb;
-} */
+}
 
 select{
     border: 1px solid #bbb;
@@ -765,15 +765,15 @@ input[type="submit"]:hover{
     .timeline_detail::before{
         display: block;
         width: 36px;
-        height: 36px;
+        height: 42px;
         background: #d0bea2;
         text-align: center;
         padding: 1.6px;
         position: absolute;
         top: 24px;
         left: -24px;
-        /*Font Awesomeの設定(無課金のためダミー設定)*/
-        font-family: 'Font Awesome 5 pro';
+        /*Font Awesomeの設定*/
+        font-family: 'Font Awesome 6 Free';
         font-weight: 900;
         color: #fff;
         font-size: 24px;
@@ -792,7 +792,7 @@ input[type="submit"]:hover{
     }
 
     .icon_hand::before{
-        content: '\f205';
+        content: '\f2b5';
     }
 
     /*inputタグの設定*/
@@ -814,7 +814,7 @@ input[type="submit"]:hover{
         margin-right: 24px;
     }
 
-    select{
+    .select_box{
         width: 40%;
     }
     
