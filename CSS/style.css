@@ -692,8 +692,10 @@ input[type="submit"]:hover{
 
     /*job.htmlここから*/
     .wrapper{
-        margin: 120px 160px;
-        padding: 0 22px;
+        /* 余白の設定ここ大事 */
+        margin: 120px auto;
+        padding: 0 32px;
+        max-width: 900px;
     }
     
     .recruitment_detail h1,
